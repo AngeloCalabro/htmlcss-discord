@@ -88,11 +88,12 @@ nav a.btn {
 h1 {
     text-transform: uppercase;
     font-size: 56px;
+    line-height: 1;
 }
 
 .subtitle-h1 {
-    margin-top: 40px;
-    margin-bottom: 16px
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .title-subtitle {
@@ -152,6 +153,7 @@ h1 {
 .flexbox-main {
     display: flex;
     justify-content: space-around;
+    margin: 105px;
 }
 
 .flexbox-card {
@@ -164,7 +166,7 @@ h1 {
     background-color: var(--grigio);
     height: 600px;
     padding: 56px;
-    margin: 35px;
+    margin: 10px;
 }
 
 .flexbox-card img {
