@@ -1,0 +1,306 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #3161e0;
+    /* sfondo header */
+    --nero: #23272a;
+    /* scritte e sfondo */
+    --viola: #5b6da9;
+    /* titolo footer */
+    --bianco: #fff;
+    /* titolo footer */
+    --grigio: #f6f6f6;
+    /* sfondo grigio */
+    --lilla: #8ea1e1;
+    /* bottone */
+    --blue-chiaro: #7983f5;
+    /* bottone chiaro */
+}
+
+/* .debug { 
+    border: 1px solid black;
+} */
+/* rimuovere */
+
+/* general */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--bianco);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header index*/
+.inner-index {
+    background-color: var(--blue);
+    background: url('../img/jumbo.png');
+    background-size: cover;
+    min-height: 450px;
+}
+
+header nav ul {
+    min-width: 500px;
+}
+
+nav {
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bianco);
+}
+
+nav a.btn {
+    font-size: 10px;
+}
+
+.flexbox-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bottoni */
+.btn {
+    display: inline-block;
+    background-color: var(--bianco);
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: var(--nero);
+    margin: 10px;
+    font-size: 14px;
+}
+
+.btn-black {
+    background-color: var(--nero);
+    color: var(--bianco);
+}
+
+.btn-lila {
+    background-color: var(--lilla);
+    color: var(--bianco);
+}
+
+.btn:hover {
+    background-color: var(--nero);
+    color: var(--bianco);
+    box-shadow: 0 0 50px var(--grigio);
+}
+
+.btn-black:hover {
+    background-color: var(--lilla);
+    color: var(--bianco);
+    box-shadow: 0 0 50px var(--grigio);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    max-width: 1170px;
+    min-height: 200px;
+}
+
+div h1 {
+    font-size: 46px;
+}
+
+div.hero h1,
+div.hero p {
+    color: var(--bianco);
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.flexbox-hero {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    min-height: 250px;
+    margin: 0 auto;
+}
+
+/* main */
+
+main {
+    text-align: center;
+}
+
+main section div h2 {
+    color: var(--nero);
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+main section div p {
+    color: var(--nero);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.title-p {
+    max-width: 20%;
+    min-width: 20%
+}
+
+/* divisione layout */
+section.flexbox-row img,
+div.flexbox-row-reverse img {
+    min-width: 400px;
+    max-width: 500px;
+    width: 40%;
+}
+
+.flexbox-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.flexbox-row-reverse {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row-reverse wrap;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+svg {
+    display: block;
+}
+
+.wave {
+    color: var(--grigio);
+}
+
+.wave-rotate {
+    transform: rotate(180deg);
+    color: var(--grigio);
+}
+
+/* colore sezioni intermedia */
+.bg-color-grey {
+    background-color: var(--grigio);
+    width: 100%;
+}
+
+/* sfondo con stelline */
+.stars-image {
+    background: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 400px;
+}
+
+div.stars-image h3 {
+    padding: 40px 0 0 0;
+}
+
+.title-final {
+    max-width: 50%;
+    min-width: 50%;
+}
+
+div.title-final p {
+    text-align: center;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* footer */
+footer {
+    background-color: var(--nero);
+    color: var(--bianco);
+    font-size: 10px;
+    line-height: 1.7;
+    min-width: 600px;
+}
+
+footer h3 {
+    font-size: 16px;
+}
+
+footer h4,
+footer h3 {
+    color: var(--lilla);
+}
+
+.flexbox-footer {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+.flexbox-footer-column {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flexbox-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* 
+select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    min-width: 150px;
+} */
+
+div.info-box h3,
+div.info-box select,
+div.info div {
+    padding: 10px 0;
+}
+
+div.info-box img {
+    margin-right: 10px;
+}
+
+div.social-box a {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+/* dopo linea lilla */
+.row-final {
+    border-top: 1px solid var(--lilla);
+    margin-top: 20px;
+}
