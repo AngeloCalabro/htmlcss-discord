@@ -35,8 +35,8 @@ body {
 }
 
 .container {
+    margin: auto;
     max-width: 1170px;
-    margin: 0 auto;
 }
 
 /* PAGES scarica */
@@ -66,7 +66,7 @@ a {
 }
 
 nav a.btn {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .flexbox-nav {
@@ -76,7 +76,7 @@ nav a.btn {
     align-items: center;
 }
 
-.flexbox {
+.flexbox-hero {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -100,7 +100,7 @@ h1 {
 }
 
 .hero-image {
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -109,10 +109,10 @@ h1 {
 .btn {
     background-color: var(--bianco);
     border-radius: 20px;
-    padding: 10px;
+    padding: 16px 32px;
     color: var(--nero);
     margin: 10px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .btn-black {
@@ -149,28 +149,37 @@ h1 {
 }
 
 /* main */
-
-section {
-    width: 1170px;
+.flexbox-main {
+    display: flex;
+    justify-content: space-around;
 }
 
-.card {
-    /* display: flex;
-    flex-flow: column wrap; */
-
-
+.flexbox-card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
     overflow: hidden;
     border-radius: 16px;
-    padding: 56px;
     background-color: var(--grigio);
-    height: 363px;
+    height: 600px;
+    padding: 56px;
+    margin: 35px;
 }
 
-/* .cards-flexbox {
-    display: flex;
-    flex-flow: row wrap;
-    width: calc(100% / 3);
-} */
+.flexbox-card img {
+    margin-top: 64px;
+    width: auto;
+}
+
+.card-text {
+    height: max-content;
+    text-align: left;
+}
+
+.section-right {
+    margin-top: 15%;
+}
 
 /* footer */
 footer {
