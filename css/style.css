@@ -38,42 +38,6 @@ body {
     margin: 0 auto;
 }
 
-/* Header index*/
-.inner-index {
-    background-color: var(--blue);
-    background: url('../img/jumbo.png');
-    background-size: cover;
-    min-height: 450px;
-}
-
-header nav ul {
-    min-width: 500px;
-}
-
-nav {
-    padding: 20px;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--bianco);
-}
-
-nav a.btn {
-    font-size: 10px;
-}
-
-.flexbox-nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Bottoni */
 .btn {
     display: inline-block;
@@ -107,11 +71,45 @@ nav a.btn {
     box-shadow: 0 0 50px var(--grigio);
 }
 
+/* Header index*/
+header {
+    background-color: var(--blue);
+}
+
+header nav ul {
+    min-width: 500px;
+}
+
+nav {
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bianco);
+}
+
+nav a.btn {
+    font-size: 10px;
+}
+
+.flexbox-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Hero */
 .hero {
+    background: url('../img/jumbo.png');
+    background-size: cover;
+    min-height: 450px;
     text-align: center;
-    max-width: 1170px;
-    min-height: 200px;
 }
 
 div h1 {
@@ -123,6 +121,7 @@ div.hero p {
     color: var(--bianco);
     padding: 20px;
     line-height: 1.5;
+    max-width: 750px;
 }
 
 .flexbox-hero {
@@ -131,8 +130,7 @@ div.hero p {
     align-content: center;
     align-items: center;
     justify-content: center;
-    max-width: 700px;
-    min-height: 250px;
+    min-height: 450px;
     margin: 0 auto;
 }
 
