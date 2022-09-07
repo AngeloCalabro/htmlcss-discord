@@ -6,7 +6,7 @@
 }
 
 :root {
-    --blue: #3161e0;
+    --blue: #255ee9;
     /* sfondo header */
     --nero: #23272a;
     /* scritte e sfondo */
@@ -72,16 +72,13 @@ body {
 }
 
 /* Header index*/
-header {
-    background-color: var(--blue);
-}
-
 header nav ul {
     min-width: 500px;
 }
 
 nav {
     padding: 20px;
+
 }
 
 li {
@@ -104,12 +101,22 @@ nav a.btn {
     align-items: center;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--blue);
+    z-index: 100;
+}
+
 /* Hero */
 .hero {
     background: url('../img/jumbo.png');
     background-size: cover;
     min-height: 450px;
     text-align: center;
+    margin-top: 50px;
 }
 
 div h1 {
